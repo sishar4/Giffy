@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/sishar4/Giffy#readme",
   "dependencies": {
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
     "bootstrap": "^3.3.6",
     "express": "^4.13.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "ui-router": "^1.0.0-alpha.3"
   }
 }
