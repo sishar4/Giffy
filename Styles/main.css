@@ -1,0 +1,29 @@
+body {
+	width: 500px;
+	background-color: black;
+}
+
+#header h2 {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+#header p {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.col-xs-12 {
+	background-color: green;
+}
+
+.input-group {
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
