@@ -10,6 +10,11 @@ app.use(express.static(viewPath));
 var nodeModulesPath = path.join(rootPath, 'node_modules');
 app.use(express.static(nodeModulesPath));
 
+app.use(require('./middleware/logging.middleware'));
+
+app.use(require('./middleware/request-state.middleware'));
+
+app.use('/api', require('./api/api.router'));
 
 var port = 8080;
 app.listen(port, function () {

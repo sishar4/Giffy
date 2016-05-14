@@ -1,0 +1,1 @@
+//Routes to get trending gifs, and search gifs by name
