@@ -6,31 +6,40 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
-      }
-    </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
+    <title>Giffy: Search and Share</title>
     <script src="popup.js"></script>
+    <base href="/">
+
+    <!--external CSS dependencies-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!--local CSS dependencies-->
+
+    <!--external JS dependencies-->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
-  <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
+
+  <body style="width: 500px;">
+    <div class="container">
+      <div id="header">
+        <h2 style="text-alignment: center;">Giffy</h2>
+      </div>
+      <div class="col-xs-12" style="background-color: green;">
+        <h4>Trending</h4>
+        <p>Table of Gifs</p>
+        <ul>
+          <li>Gif 1</li>
+          <li>Gif 2</li>
+          <li>Gif 3</li>
+        </ul>
+      </div>
+      <div id="footer">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
